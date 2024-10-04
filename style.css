@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Protest+Strike&display=swap');
+
 /* >>>>> RESET <<<<< */
     *,
     *::before,
@@ -72,6 +74,10 @@
     .navList .links{
         display: none;
     }
+
+    .navbar span{
+        display: none;
+    }
 /* >>> Other Links */
     .links{
         display: flex;
@@ -91,6 +97,9 @@
     }
 /* >>> RESPONSIVE WEB FOR MOBILE */
     @media(max-width: 800px){
+        .navbar span{
+            display: block;
+        }
         .header{
             justify-content: initial;
         }
@@ -109,12 +118,15 @@
         }
 
         .navList{
+            background-color: rgba(0, 0, 0, 0.13);
+            backdrop-filter: blur(5px);
+
             padding: 12px;
             width: 300px;
             height: 100vh;
 
             position: fixed;
-            right: -285px;
+            right: -300px;
             top: 0;
             z-index: 10;
 
@@ -146,6 +158,42 @@
 
         #sidebar-active:checked ~ .navList{
             right: 0;
-            transition: ease-in 500ms;
+            transition: ease-in-out 500ms;
         }
     }
+/*  */
+
+/* >>>>> HERO SECTION STYLES <<<<< */
+    .hero{
+        height: 100vh;
+    }
+
+    .intro{
+        color: black;
+        background-image: url('img/Aesthetic.png');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        margin: 20px;
+        height: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero h1{
+        color: #ff764d;
+        font-family: "Protest Strike", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 10rem;
+    }
+
+/* >>> RESPONSIVE WEB  */
+    @media(max-width: 500px){
+        .hero h1{
+            font-size: 8rem;
+        }
+    }
+/*  */
