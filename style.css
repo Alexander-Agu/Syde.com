@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+/* >>>>> RESET <<<<< */
+    *,
+    *::before,
+    *::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+/*  */
+
+/* >>>>> GENERAL STYLES <<<<< */
+    html{
+        scroll-behavior: smooth;
+    }
+/*  */
+
+/* >>>>> HEADER STYLES <<<<< */
+    .header{
+        font-family: "Afacad Flux", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 570;
+        font-style: normal;
+        font-variation-settings:
+            "slnt" 0;
+        font-size: 20px;
+        padding: 12px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+/* >>> Logo & Links */
+    .logo-links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .navbar{
+
+    }
+
+    .navList{
+        list-style: none;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .navLink span{
+        display: none;
+    }
+
+    .navLink{
+        text-decoration: none;
+    }
+
+    .navLink p{
+        color: black;
+    }
+/* >>> Other Links */
+    .otherLinks{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .otherLinks a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .otherLinks a:first-child{
+        color: rgb(14, 112, 145);
+        text-decoration: underline;
+    }
