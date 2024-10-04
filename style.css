@@ -190,6 +190,35 @@
         font-size: 10rem;
     }
 
+    /* >>> INFORMATION SECTION STYLES */
+    .info{
+        margin: 20px;
+        height: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info p{
+        width: 400px;
+        font-family: "Afacad Flux", sans-serif;
+        font-family: "Afacad Flux", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 570;
+        font-style: normal;
+        font-variation-settings:
+            "slnt" 0;
+    }
+
+    .info span{
+        color: black;
+        font-size: 1.5rem;
+        font-family: "Protest Strike", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
 /* >>> RESPONSIVE WEB  */
     @media(max-width: 500px){
         .hero h1{
