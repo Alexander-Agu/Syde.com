@@ -64,20 +64,88 @@
     .navLink p{
         color: black;
     }
+
+    .navbar input{
+        display: none;
+    }
+
+    .navList .links{
+        display: none;
+    }
 /* >>> Other Links */
-    .otherLinks{
+    .links{
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 1rem;
     }
 
-    .otherLinks a{
+    .links a{
         text-decoration: none;
         color: black;
     }
 
-    .otherLinks a:first-child{
+    .links a:first-child{
         color: rgb(14, 112, 145);
         text-decoration: underline;
+    }
+/* >>> RESPONSIVE WEB FOR MOBILE */
+    @media(max-width: 800px){
+        .header{
+            justify-content: initial;
+        }
+        .navbar{
+            padding: 20px;
+            position: fixed;
+            right: 0;
+        }
+
+        .otherLinks{
+            height: 50%;
+        }
+
+        .links{
+            display: none;
+        }
+
+        .navList{
+            padding: 12px;
+            width: 300px;
+            height: 100vh;
+
+            position: fixed;
+            right: -285px;
+            top: 0;
+            z-index: 10;
+
+            flex-direction: column;
+            justify-content: initial;
+            align-items: initial;
+            transition: ease-in-out 500ms;
+        }
+
+        .navList .links{
+            display: block;
+            margin-top: 0;
+            padding-top: 650px;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navLink{
+            display: flex;
+            justify-content: initial;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .navLink span{
+            display: block;
+        }
+
+        #sidebar-active:checked ~ .navList{
+            right: 0;
+            transition: ease-in 500ms;
+        }
     }
